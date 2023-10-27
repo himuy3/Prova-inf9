@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+
+    <style>
+        .headerPagina {
+            background: #9d8080;
+            width: 1000px;
+            height: 65px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 35px;
+            position: absolute;
+
+        }
+
+        .logoSite {
+            width: 10px;
+            left: 50%;
+        }
+
+        .nav1 {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            font-size: 25px;
+        }
+
+        .nav_li1 {
+            display: inline;
+            margin: 0 0 0 20px;
+        }
+
+        .nav2 {
+            position: absolute;
+            font-size: 25px;
+        }
+
+        .nav_li2 {
+            display: inline;
+            margin: 0 0 0 20px;
+        }
+
+        .textoHomemPulando {
+            width: 1000px;
+            height: 1000px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 35px;
+            position: absolute;
+            top: 250px;
+            color: white;
+        }
+
+        .botao {
+            background: white;
+            color: black;
+            border-style: outset;
+            border-color: white;
+            width: 170px;
+            height: 50px;
+            right: 740px;
+            top: 70%;
+            text-align: center;
+            font: arial, sans-serif;
+            font-size: 30px;
+            position: absolute
+        }
+
+        .bodyDoSite {
+            background: white;
+            width: 1000px;
+            height: 65px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 35px;
+            position: absolute;
+        }
+
+        .fundoDasImagens {
+            background: #bacc17;
+            width: 1000px;
+            height: 390px;
+            position: absolute;
+
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 15px;
+        }
+
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery__item--1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .gallery__item--2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .gallery__item--3 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .gallery__item--4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+
+        .informacoesFundo {
+            background: #191c03;
+            width: 1000px;
+            height: 500px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="headerPagina">
+        <div class="logoSite"><img src="logo.png" alt="logoHeader" width="250px"></div>
+        <nav class="nav1">
+            <ul>
+                <li class="nav_li1">Home</li>
+                <li class="nav_li1">Sobre</li>
+                <li class="nav_li1">Reservas</li>
+                <li class="nav_li1">Contato</li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <img src="hero.jpg" alt="homem_pulando" width="1000" height="600">
+        <div class="textoHomemPulando">
+            Conheça este paraiso chamado Itacaré
+            <br>
+            <br>
+            "Aconchego, conforto, simpatia e alto astral"
+        </div>
+        <div class="botao">Saiba Mais</div>
+    </div>
+
+    <div class="bodyDoSite">
+        <h3>Conheça o Hotel Paraiso</h1>
+            <br>
+            <font size="5">
+                <p>Feche os olhos e imagine o paraiso. Um Lugar no meio da mata Atlantica e banhado pelo mar, onde você
+                    encontra a paz,
+                    tranquilidade, conforto e comodidade.</p>
+            </font>
+            <div class="fundoDasImagens">
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                        <img src="itacare-01.jpg" class="gallery__img" alt="Image 1">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="itacare-02.jpg" class="gallery__img" alt="Image 2">
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="itacare-03.jpg" class="gallery__img" alt="Image 3">
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img src="itacare-03.jpg" class="gallery__img" alt="Image 4">
+                    </figure>
+                </div>
+                <div class="informacoesFundo">
+                    <h4>Unico Hotel pe na areia de Itacare
+        </h3>
+        <br>
+        <font size="3">
+            <p>Implantado em uma área completamente arborizada, o Hotel Paraiso é o único hotel pé na area de Itacaré.
+                Aqui o mar será
+                seu companheiro e você terá as belezas naturais como galeria.
+            <nav class="nav2">
+                <ul>
+                    <li class="nav_li2">Home</li>
+                    <li class="nav_li2">Sobre</li>
+                    <li class="nav_li2">Reservas</li>
+                </ul>
+            </nav>
+            </p>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
